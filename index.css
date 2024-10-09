@@ -1,0 +1,180 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+header {
+  background-color: aquamarine;
+  height: 700px;
+  background-image: url(images/DSC_2216.JPG);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+h1{
+  color:cyan;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.gaku{
+  width: 600px;
+}
+.top_Nav {
+  margin-top: 400px;
+}
+
+.top_Nav ul {
+  color:lightgoldenrodyellow;
+  margin: 0 auto;
+  list-style: none;
+  animation: updown 2s forwards;
+  padding-left: 0;
+}
+
+.top_Nav ul a {
+  display: block;
+  width: 150px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  color: rgb(255, 0, 0);
+  text-decoration: none;
+  background-color: lightgoldenrodyellow;
+  padding: 5px 10px;
+}
+
+main{
+  width: 95%;
+  margin: 50px auto;
+}
+
+.gaku{
+  display: none;
+}
+
+.flex{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex img {
+  height: 300px;
+}
+
+.flex-reverse-mb{
+  flex-direction: column-reverse;
+}
+
+.flex div {
+  width: 250px;
+  margin: 0 auto;
+}
+
+.GAKU_img {
+  width: 100%;
+}
+@media screen and (min-width: 980px){
+  main{
+    width: 960px;
+    margin: 50px auto;
+  }
+
+  h1{
+    padding-top: 200px;
+    text-align: center;
+    padding-right: 400px;
+  }
+
+  .top_Nav ul {
+    color:lightgoldenrodyellow;
+    display:flex;
+    justify-content: space-between;
+    width: 600px;
+    margin: 0 auto;
+    list-style: none;
+    animation: updown 2s forwards;
+  }
+  
+  .top_Nav ul a {
+    display: inline;
+    width: auto;
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    background-color: lightgoldenrodyellow;
+    padding: 10px 15px;
+    transition: all 0.6s ease-in-out;
+    border: 1px solid red;
+    border-radius: 12px;
+    box-shadow: 5px 5px 5px rgb(40, 39, 41);
+  }
+  
+  .top_Nav ul a:hover {
+    color:lightgoldenrodyellow;
+    background-color: red;
+    box-shadow: none;
+  }
+
+  .flex{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  
+  .flex img {
+    height: 300px;
+    margin: 0;
+  }
+
+  .flex div {
+    margin: 0;
+  }
+
+  .gaku {
+    display: block;
+    width: 300px;
+    position: absolute;
+    top: 200px;
+    left: calc(50% + 200px);
+    animation: updownEX 2s ease-in-out forwards infinite alternate;
+  }
+}
+
+section h3 {
+  text-align: center;
+  margin-top: 32px;
+  font-size: 20px;
+  margin-bottom: 32px;
+}
+
+
+footer {
+  background-color: lightsalmon;
+  padding: 30px;
+  text-align: center;
+}
+
+
+
+@keyframes updown {
+  0% {
+    transform: translateY(-60px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes updownEX {
+  0% {
+    transform: translateY(-60px) scale(0.5);
+  }
+  100% {
+    transform: translateY(0px) scale(1.2);
+  }
+}
